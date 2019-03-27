@@ -20,9 +20,9 @@ import './App.css';
 const App = () => (
   <div>
     <Navigation />
-    <Route path="/"         component={Home}  />
-    <Route path="/about"    component={About}       />
-    <Route path="/Contact"  component={Contact}   />
+    <Route path="/"         exact   component={Home}    />
+    <Route path="/about"    exact   component={About}   />
+    <Route path="/Contact"  exact   component={Contact} />
     
     
   </div>
