@@ -1,7 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import 'bootstrap/dist/css/bootstrap.css';
+// Import Dependencies
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+    // Import React-Router-Dom
+        import { BrowserRouter as Router, Router} from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Import Components
+    import App from './App';
+
+// Styles
+    import './index.css';
+    import 'bootstrap/dist/css/bootstrap.css';
+
+ReactDOM.render(
+    <Router>
+        <App />
+    </Router>, 
+    document.getElementById('root')
+);
